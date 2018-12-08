@@ -7,7 +7,7 @@ echo 'This is Opstree CI CD'
 
 stage('Checkout Code')
 {
-git 'https://github.com/AshutoshKumar99/FastMaven.git'
+git 'https://github.com/AshutoshKumar99/CompleteCICDPipeline'
 }
 
 stage('Build Code')
