@@ -33,16 +33,14 @@ stage ('JUnit report')
  
  }
  
-  stage('Deploy to Tomcat'){
-      
-      sshagent(['TOMCATDEV']) 
-      {
+ stage('Deploy to Tomcat')
+{  
+	  sshagent(['apachetomcat']) 
+    {
+    sh 'scp -o StrictHostKeyChecking=no target/*.war ubuntu@13.233.197.20:/var/lib/tomcat8/webapps/'
+    }
 	  
-	    sh 'scp -o StrictHostKeyChecking=no target/*.war ubuntu@13.233.162.181:/var/lib/tomcat8/webapps/'
-    
-}
    }
-  
   
 
 }
