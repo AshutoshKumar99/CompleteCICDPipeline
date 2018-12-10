@@ -37,7 +37,7 @@ stage ('JUnit report')
 {  
 	  sshagent(['apachetomcat']) 
     {
-    sh 'scp -o StrictHostKeyChecking=no target/*.war ubuntu@13.233.197.20:/var/lib/tomcat8/webapps/'
+    sh 'scp -o StrictHostKeyChecking=no target/*.war ubuntu@13.233.162.162:/var/lib/tomcat8/webapps/'
     }
 	  
    }
