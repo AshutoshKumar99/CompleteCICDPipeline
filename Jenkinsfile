@@ -48,7 +48,7 @@ stage ('JUnit report')
 mail bcc: '', body: '''HI welcome 
 jenkins email alert
 thanks
-Ashutosh''', cc: 'ashuotshkumar101094@gmail.com', from: '', replyTo: '', subject: 'Jenkins Job', to: 'ashuotshkumar101094@gmail.com'
+Ashutosh''', cc: 'ashutoshkumar101094@gmail.com', from: '', replyTo: '', subject: 'Jenkins Job', to: 'ashutoshkumar101094@gmail.com'
 
 
 }
