@@ -43,11 +43,13 @@ stage ('JUnit report')
    }
   
 	
- stage('Email Notification'){
-      mail bcc: '', body: '''Hi Welcome to jenkins email alerts
-      Thanks
-      Ashutosh Kumar''', cc: '', from: '', replyTo: '', subject: 'Jenkins Job', to: 'ashutosh.kumar@pb.com'
-   }
+ stage('Email notification')
+{
+mail bcc: '', body: '''HI welcome 
+jenkins email alert
+thanks
+Ashutosh''', cc: 'ashuotshkumar101094@gmail.com', from: '', replyTo: '', subject: 'Jenkins Job', to: 'ashuotshkumar101094@gmail.com'
+
 
 	
 	
